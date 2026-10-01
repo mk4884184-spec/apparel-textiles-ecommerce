@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern Apparel and Textiles E-Commerce Website">
+  <title>ThreadStyle | Apparel & Textiles</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">ThreadStyle</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="wishlistBtn" aria-label="Wishlist">♡</button>
+        <button id="cartBtn" aria-label="Shopping cart">
+          🛒 <span id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">NEW COLLECTION 2026</p>
+          <h1>Style Made<br>for Everyday.</h1>
+          <p>
+            Discover comfortable, modern and affordable apparel
+            designed for your everyday lifestyle.
+          </p>
+          <a href="#shop" class="btn">Shop Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container" id="categories">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE</p>
+        <h2>Shop by Category</h2>
+      </div>
+
+      <div class="category-grid">
+        <button class="category-card" data-category="Men">
+          <span>👔</span>
+          <h3>Men</h3>
+        </button>
+
+        <button class="category-card" data-category="Women">
+          <span>👗</span>
+          <h3>Women</h3>
+        </button>
+
+        <button class="category-card" data-category="Accessories">
+          <span>👜</span>
+          <h3>Accessories</h3>
+        </button>
+
+        <button class="category-card" data-category="All">
+          <span>✨</span>
+          <h3>All Products</h3>
+        </button>
+      </div>
+    </section>
+
+    <section class="products container" id="shop">
+      <div class="section-heading">
+        <p class="eyebrow">OUR COLLECTION</p>
+        <h2>Featured Products</h2>
+      </div>
+
+      <div class="shop-controls">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search products..."
+          aria-label="Search products"
+        >
+
+        <select id="sortSelect" aria-label="Sort products">
+          <option value="default">Sort By</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+          <option value="name">Name</option>
+        </select>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-content">
+        <div>
+          <p class="eyebrow">ABOUT THREADSTYLE</p>
+          <h2>Quality fabrics. Simple style.</h2>
+        </div>
+
+        <p>
+          ThreadStyle is a conceptual apparel and textiles e-commerce
+          platform focused on providing customers with a simple,
+          responsive and user-friendly shopping experience.
+        </p>
+      </div>
+    </section>
+
+    <section class="newsletter container" id="contact">
+      <div>
+        <p class="eyebrow">STAY UPDATED</p>
+        <h2>Join our newsletter</h2>
+        <p>Get updates about new collections and offers.</p>
+      </div>
+
+      <form id="newsletterForm">
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="Enter your email"
+          required
+        >
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <h3>ThreadStyle</h3>
+        <p>Apparel & Textiles E-Commerce</p>
+      </div>
+
+      <p>© 2026 ThreadStyle. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <button class="close-btn" id="closeModal">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
